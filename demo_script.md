@@ -5,7 +5,11 @@ This script provides a step-by-step guide for demonstrating Windsurf's capabilit
 ## Demo Preparation
 
 1. Install Windsurf on your machine
-2. Clone the windsurf-demo repository
+2. Clone the windsurf-demo repository:
+   ```bash
+   git clone git@github.com:Hainguyen1210/windsurf-demo.git
+   cd windsurf-demo
+   ```
 3. Run the initialization script to create a new project:
    ```bash
    ./init.sh task-manager my-demo

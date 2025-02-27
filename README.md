@@ -15,11 +15,9 @@ Windsurf is a revolutionary agentic IDE that helps you write code, build APIs, c
 
 ### Setup Instructions
 
-#### Option 1: Using the initialization script
-
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/windsurf-demo.git
+   git clone git@github.com:Hainguyen1210/windsurf-demo.git
    cd windsurf-demo
    ```
 
@@ -30,23 +28,6 @@ Windsurf is a revolutionary agentic IDE that helps you write code, build APIs, c
    This will create a new directory with the specified name, copy the templates, and initialize a Git repository.
 
 3. Open the new project in Windsurf and start building!
-
-#### Option 2: Manual setup
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/windsurf-demo.git
-   cd windsurf-demo
-   ```
-
-2. Create a new branch for your project:
-   ```bash
-   git checkout -b my-project
-   ```
-
-3. Open the project in Windsurf
-
-4. Follow the prompt guide to build your application
 
 ## Repository Contents
 

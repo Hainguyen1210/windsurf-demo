@@ -25,7 +25,7 @@ This project was created using the Windsurf Demo Starter Kit.
 ## Getting Started
 
 1. Open this project in Windsurf
-2. Follow the prompt guide at: https://github.com/yourusername/windsurf-demo/blob/main/windsurf_prompt_guide.md
+2. Follow the prompt guide at: https://github.com/Hainguyen1210/windsurf-demo/blob/main/windsurf_prompt_guide.md
 
 ## Project Structure
 
