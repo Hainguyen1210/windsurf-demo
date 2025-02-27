@@ -9,12 +9,13 @@ PROJECT_NAME=${1:-"windsurf-project"}
 BRANCH_NAME=${2:-"my-project"}
 
 # Create project directory
-mkdir -p $PROJECT_NAME/backend $PROJECT_NAME/frontend
+mkdir -p $PROJECT_NAME/backend $PROJECT_NAME/frontend $PROJECT_NAME/testing/selenium
 
 # Copy templates
 cp -r templates/backend/* $PROJECT_NAME/backend/
 cp -r templates/frontend/* $PROJECT_NAME/frontend/
 cp templates/docker-compose.yml $PROJECT_NAME/
+cp -r templates/testing/selenium/* $PROJECT_NAME/testing/selenium/
 
 # Create README
 cat > $PROJECT_NAME/README.md << EOL
@@ -31,6 +32,7 @@ This project was created using the Windsurf Demo Starter Kit.
 
 - \`backend/\`: Go/Gin API
 - \`frontend/\`: React frontend
+- \`testing/\`: Test automation
 - \`docker-compose.yml\`: Docker configuration
 EOL
 

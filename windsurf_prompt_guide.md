@@ -48,11 +48,11 @@ Dockerize the task management application with:
 
 ```
 Create comprehensive tests for the task management application:
-1. Unit tests for the Go API handlers and models
-2. Integration tests for the API endpoints
-3. Unit tests for React components
-4. End-to-end tests for the complete application
-5. A GitHub Actions workflow for continuous integration
+1. Complete the Selenium test template in the testing/selenium directory
+2. Implement the missing update and delete task tests
+3. Add tests for form validation and error handling
+4. Set up the test environment to run in the CI/CD pipeline
+5. Generate test reports for easy analysis
 ```
 
 ## Example Project Structure
@@ -61,6 +61,8 @@ Create comprehensive tests for the task management application:
 project/
 ├── backend/              # Go API
 ├── frontend/             # React frontend
+├── testing/              # Test automation
+│   └── selenium/         # Selenium tests
 ├── docker-compose.yml    # Docker composition
 └── .github/workflows/    # CI configuration
 ```
@@ -115,6 +117,17 @@ Optimize the performance of the task management application:
 3. Optimize React rendering with memoization
 4. Implement database indexing
 5. Add load testing and performance monitoring
+```
+
+### Enhancing Test Automation
+
+```
+Enhance the Selenium test suite for the task management application:
+1. Add data-driven testing for different task scenarios
+2. Implement page object pattern for better test organization
+3. Add visual regression testing
+4. Set up parallel test execution for faster feedback
+5. Implement test retries for flaky tests
 ```
 
 Remember that Windsurf works best when you provide clear, specific instructions. Start with a high-level description and then refine with more detailed prompts as needed.

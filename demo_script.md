@@ -99,15 +99,42 @@ This script provides a step-by-step guide for demonstrating Windsurf's capabilit
 2. Navigate to http://localhost:3000 in a browser
 3. Demonstrate the working application by creating, viewing, updating, and deleting tasks
 
-### 7. Conclusion (1 minute)
+### 7. Implementing Test Automation (3 minutes)
 
-"As you've seen, Windsurf has helped us build a complete application with minimal effort. We've created a backend API, frontend client, and Docker deployment in just a few minutes. This demonstrates how Windsurf can accelerate development and help developers focus on solving problems rather than writing boilerplate code."
+1. Open the test_task_manager.py file in the testing/selenium directory
+2. Show the minimal starter template
+3. Prompt Windsurf:
+   ```
+   Complete this Selenium test template by implementing:
+   1. The missing update_task test method
+   2. The missing delete_task test method
+   3. Additional tests for form validation
+   4. A page object pattern for better test organization
+   ```
+4. Review the generated test code with the audience, highlighting:
+   - Test structure
+   - Selenium WebDriver usage
+   - Test assertions
+   - Page object pattern implementation
+
+### 8. Running the Tests (2 minutes)
+
+1. Navigate to the testing/selenium directory in the terminal
+2. Run the tests:
+   ```bash
+   python -m unittest test_task_manager.py
+   ```
+3. Show the test results and explain how they verify the application's functionality
+
+### 9. Conclusion (1 minute)
+
+"As you've seen, Windsurf has helped us build a complete application with minimal effort. We've created a backend API, frontend client, Docker deployment, and automated tests in just a few minutes. This demonstrates how Windsurf can accelerate development and help developers focus on solving problems rather than writing boilerplate code."
 
 ## Additional Demo Options
 
 If you have more time, consider demonstrating:
 
 1. **Adding Authentication**: Prompt Windsurf to add JWT authentication
-2. **Implementing Testing**: Prompt Windsurf to add unit and integration tests
-3. **Setting up CI/CD**: Prompt Windsurf to create a GitHub Actions workflow
-4. **Adding Advanced Features**: Prompt Windsurf to add features like task categories, priorities, or notifications
+2. **Implementing CI/CD**: Prompt Windsurf to create a GitHub Actions workflow
+3. **Adding Advanced Features**: Prompt Windsurf to add features like task categories, priorities, or notifications
+4. **Enhancing Test Automation**: Prompt Windsurf to add data-driven testing or visual regression testing

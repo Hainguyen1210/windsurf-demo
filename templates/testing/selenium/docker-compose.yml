@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  selenium-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    depends_on:
+      - frontend
+    networks:
+      - app-network
+    environment:
+      - BASE_URL=http://frontend:80
+    command: >
+      sh -c "echo 'Waiting for frontend to be ready...' &&
+             sleep 10 &&
+             python -m unittest test_task_manager.py"
+
+  # These services would be defined in your main docker-compose.yml
+  # They are included here for reference
+  frontend:
+    image: frontend-image
+    ports:
+      - "3000:80"
+    networks:
+      - app-network
+
+  backend:
+    image: backend-image
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

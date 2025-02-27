@@ -34,6 +34,9 @@ Windsurf is a revolutionary agentic IDE that helps you write code, build APIs, c
 - [**Windsurf Prompt Guide**](./windsurf_prompt_guide.md): A comprehensive guide with example prompts for building a complete application
 - [**Demo Script**](./demo_script.md): A sample demo script to showcase Windsurf's capabilities
 - [**Templates**](./templates/): Starter templates for backend and frontend components
+  - **Backend**: Go/Gin API template
+  - **Frontend**: React application template
+  - **Testing**: Selenium test automation template
 - [**Initialization Script**](./init.sh): Script to quickly set up a new project
 
 ## Demo Ideas
